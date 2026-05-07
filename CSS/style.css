@@ -1,0 +1,28 @@
+.cards-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.cards-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+
+.cards-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 999px;
+}
+
+.scroll-card {
+  min-width: 280px;
+  max-width: 320px;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .scroll-card {
+    min-width: 240px;
+    max-width: 280px;
+  }
+}
